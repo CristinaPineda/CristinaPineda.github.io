@@ -1,9 +1,11 @@
+import React from 'react';
+import Routes from './routes';
 import './App.css';
 
 function App() {
   return (
     <div className="App"> 
-      <h1>inicio do meu portifolio</h1>
+      <Routes />
     </div>
   );
 }
