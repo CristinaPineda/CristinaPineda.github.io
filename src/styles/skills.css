@@ -1,0 +1,46 @@
+.skills {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+}
+
+.p-skill {
+  color: deeppink;
+  font-weight: 600;
+}
+
+.p-skill:hover {
+  color: darkmagenta;
+}
+
+.icons {
+  align-items: flex-end;
+  background-color: darkcyan;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  width: 70%;
+}
+
+.icons:hover {
+  background-color: cornflowerblue;
+}
+
+.span-icons {
+  color: transparent;
+  font-size: 12px;
+}
+
+.span-icons:hover {
+  color: white;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+}

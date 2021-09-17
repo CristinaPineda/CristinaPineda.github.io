@@ -4,11 +4,11 @@ import Skills from './Skills';
 import '../styles/header.css';
 
 export default function Header() {
-  return(
+  return (
     <header className="header">
-      <img src={ cris } alt="fots Cristina" width="150rem" id="myPhoto" />
+      <img src={ cris } alt="fots Cristina" width="150rem" id="my-photo" />
       <h1>
-        Cristina Pineda Web Developer />
+        Cristina Pineda Web Developer /{'>'}
       </h1>
       <Skills />
     </header>
