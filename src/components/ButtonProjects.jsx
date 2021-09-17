@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 
 export default function ButtonProjects() {
   const styles = useGradientBtnStyles();
-  const gutterStyles = usePushingGutterStyles({ cssProp: 'marginBottom', space: 8 });
+  const gutterStyles = usePushingGutterStyles({ cssProp: 'marginBottom', space: 2 });
 
   const goProjects = useHistory();
   const handleClick = () => {
@@ -20,7 +20,14 @@ export default function ButtonProjects() {
           classes={ styles }
           onClick={ handleClick }
         >
-          PROJECTS
+          PROJETOS
+        </Button>
+      </div>
+      <div>
+        <Button
+          classes={ styles }
+        >
+          CONTATO
         </Button>
       </div>
     </div>

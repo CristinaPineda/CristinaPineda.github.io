@@ -3,9 +3,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Electrolize', sans-serif;
-  background: 
+  background-image: url('./images/background.jpg');
+  background-repeat:round;
+  background-attachment:unset;
+  /* background-size:cover ; */
+  /* background: 
   -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
-  -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 50%, rgba(152,251,152, 1) 0%);
+  -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 50%, rgba(152,251,152, 1) 0%); */
 }
 
 code {
