@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Projects() {
   return(
-    <h1>pagina projetos</h1>
+    <h1>Em construção...</h1>
   )
 }

@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import { useGradientBtnStyles } from '@mui-treasury/styles/button/gradient';
 import { usePushingGutterStyles } from '@mui-treasury/styles/gutter/pushing';
 import { useHistory } from 'react-router';
+import startModal from '../services/modal';
 
 export default function ButtonProjects() {
   const styles = useGradientBtnStyles();
@@ -26,6 +27,7 @@ export default function ButtonProjects() {
       <div>
         <Button
           classes={ styles }
+          onClick={ () => startModal('modal-content') }
         >
           CONTATO
         </Button>
