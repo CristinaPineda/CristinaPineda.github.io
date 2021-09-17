@@ -1,0 +1,16 @@
+.header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 10%;
+    
+}
+
+h1 {text-align:center; 
+    margin:100px auto;
+    font-weight:200;
+    color: darkblue;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
