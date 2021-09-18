@@ -4,7 +4,7 @@ import linkedin from '../images/linkedin.png';
 import zap from '../images/zap.png';
 
 export default function Contact() {
-  return(
+  return (
     <div class="modal" >
       <button class="close">x</button>
       <div class="links">
