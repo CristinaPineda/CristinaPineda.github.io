@@ -2,7 +2,7 @@
   "name": "crispineda",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cristinapineda.github.io/",
+  "homepage": "https://cristinapineda.github.io/",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
