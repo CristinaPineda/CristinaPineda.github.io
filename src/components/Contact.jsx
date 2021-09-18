@@ -8,7 +8,6 @@ export default function Contact() {
     <div class="modal" >
       <button class="close">x</button>
       <div class="links">
-        <p>Você me encontra em:</p>
         <p>
           <img alt="cris-git" src={ githubblue } width="48px"/>
           <a href="https://github.com/CristinaPineda" target="blank">GitHub</a>
@@ -19,7 +18,7 @@ export default function Contact() {
         </p>
         <p>
           <img alt="cris-zap" src={ zap }/>
-          Meu contato: (11)94720.1686
+          (11)94720.1686
         </p>
         <p>
           <img alt="cris-mail" src="https://img.icons8.com/fluency/48/000000/email-open.png"/>
