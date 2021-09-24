@@ -3,14 +3,13 @@
   flex-direction: column;
   margin: auto;
   width: 60%;
-  
 }
 
 h1 {
   color: darkblue;
   font-size: 2.5rem;
   font-weight: 600;
-  margin:10px auto;
+  margin:5px auto;
   text-align:center; 
 }
 

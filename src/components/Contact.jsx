@@ -5,9 +5,9 @@ import zap from '../images/zap.png';
 
 export default function Contact() {
   return (
-    <div class="modal" >
-      <button class="close">x</button>
-      <div class="links">
+    <div className="modal" >
+      <button className="close">x</button>
+      <div className="links">
         <p>
           <img alt="cris-git" src={ githubblue } width="48px"/>
           <a href="https://github.com/CristinaPineda" target="blank">GitHub</a>

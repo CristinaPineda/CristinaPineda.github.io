@@ -1,0 +1,42 @@
+.formacao {
+  color: deeppink;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.formacao:hover {
+  color: darkmagenta;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.div-card {
+  align-items: center;
+  background-color: lavender;
+  border: 5px solid darkcyan;
+  border-radius: 10px;
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 8px;
+  width: 200px;
+}
+
+.div-card:hover {
+  border: 5px solid darkblue;
+}
+
+.div-card p {
+  color: darkgreen;
+  font-weight: 600;
+}

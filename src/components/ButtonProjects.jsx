@@ -15,22 +15,26 @@ export default function ButtonProjects() {
   }
 
   return (
-    <div className={ gutterStyles.parent }>
-      <div>
-        <Button
-          classes={ styles }
-          onClick={ handleClick }
-        >
-          PROJETOS
-        </Button>
+    <div className="btns">
+      <div className={ gutterStyles.parent }>
+        <div className="btn">
+          <Button
+            classes={ styles }
+            onClick={ handleClick }
+            >
+            PROJETOS
+          </Button>
+        </div>
       </div>
-      <div>
-        <Button
-          classes={ styles }
-          onClick={ () => startModal('modal-content') }
-        >
-          CONTATO
-        </Button>
+      <div className={ gutterStyles.parent }>
+        <div className="btn">
+          <Button
+            classes={ styles }
+            onClick={ () => startModal('modal-content') }
+            >
+            CONTATO
+          </Button>
+        </div>
       </div>
     </div>
   );

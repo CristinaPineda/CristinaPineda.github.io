@@ -5,8 +5,17 @@
   width: 60%;
 }
 
-.div-about {
+.btns {
+  display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
+.btn {
+  margin: 10px;
+}
+
+.div-about {
   color: black;
   font-weight: 600;
 }
