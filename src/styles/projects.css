@@ -1,0 +1,39 @@
+.btnsPro {
+    display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
+
+.projects {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+}
+
+.card-project {
+    align-items: center;
+    background-color: lavender;
+    border: 5px solid darkcyan;
+    border-radius: 10px;
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 30px;
+    width: 250px;
+}
+
+.card-project:hover {
+    border: 5px solid darkblue;
+}
+  
+.card-project p {
+color: darkgreen;
+font-weight: 600;
+}
+  

@@ -26,7 +26,7 @@ export default function ButtonProjects() {
   const renderButton = () => {
     if (pathname.includes("/projects")) {
       return (
-        <div className="btns">
+        <div className="btns btnsPro">
           <div className={gutterStyles.parent}>
             <div className="btn">
               <Button classes={styles} onClick={handleClickHome}>
