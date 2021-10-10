@@ -6,9 +6,9 @@
 }
 
 .image {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
@@ -30,11 +30,12 @@ h1 {
     flex-direction: column;
   }
 
+  .image h1 {
+    font-size: 2rem;
+  }
+  
   #my-photo {
     width: 10rem;
   }
 
-  .image h1 {
-    font-size: 2rem;
-  }
 }

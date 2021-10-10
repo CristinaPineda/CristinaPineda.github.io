@@ -50,3 +50,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  #skill {
+    font-size: 1.5rem;
+  }
+}
