@@ -16,7 +16,7 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="p-skill">
-        <p>Skills</p>
+        <p id="skill">Skills</p>
       </div>
       <div className="icons span-icons">
         <div className="unit">

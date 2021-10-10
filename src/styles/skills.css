@@ -8,11 +8,14 @@
 }
 
 .p-skill {
-  font-size: 30px;
-  color: deeppink;
+  font-size: 35px;
+  color: rgb(230,230,250);
   font-weight: 600;
 }
 
+#skill {
+  text-shadow: cornflowerblue 0.1em 0.1em 0.2em
+}
 .p-skill:hover {
   color: darkmagenta;
 }

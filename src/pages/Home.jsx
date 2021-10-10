@@ -4,6 +4,7 @@ import ButtonProjects from '../components/ButtonProjects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Formacao from '../components/Formacao';
+import Footer from '../components/Footer';
 import '../styles/home.css';
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
         <Contact />
       </div>
       <Formacao />
+      <div>
+        <Footer/>
+      </div>
     </div>
   )
 }
