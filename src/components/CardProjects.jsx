@@ -1,7 +1,8 @@
 import React from 'react';
 import todo from '../images/todo.png';
 import pixel from '../images/pixel.png';
-import tictactoe from '../images/tictactoe.png'
+import tictactoe from '../images/tictactoe.png';
+import bootstrapImg from '../images/bootstrapImg.png';
 
 export default function CardProjects() {
   return(
@@ -26,6 +27,15 @@ export default function CardProjects() {
           <a href="https://tic-tac-toe-react-cris.herokuapp.com/" target="blank">Acesse a aplicação</a>
           <a href="https://github.com/CristinaPineda/tic-tac-toe-react" target="blank">Link do repositório</a>
           <img src={ tictactoe } alt="todo" width="250px" height="200px"/>
+        </div>
+        <div className="card-project">
+          <h2>Boostrap project</h2>
+          <p>
+            Página de uma empresa de arquitetura estruturada com base no Boostrap
+          </p>
+          <a href="https://cristinapineda.github.io/boostrap-project/" target="blank">Acesse a aplicação</a>
+          <a href="https://github.com/CristinaPineda/boostrap-project" target="blank">Link do repositório</a>
+          <img src={ bootstrapImg } alt="todo" width="250px" height="200px"/>
         </div>
         <div className="card-project">
           <h2>Em breve</h2>
