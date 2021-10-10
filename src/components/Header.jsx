@@ -6,10 +6,12 @@ import '../styles/header.css';
 export default function Header() {
   return (
     <header className="header">
-      <img src={ cris } alt="fots Cristina" width="150rem" id="my-photo" />
-      <h1>
-        Cristina Pineda Web Developer /{'>'}
-      </h1>
+      <div className="image">
+        <img src={ cris } alt="fots Cristina" width="220em" id="my-photo" />
+        <h1>
+          Cristina Pineda Web Developer /{'>'}
+        </h1>
+      </div>
       <Skills />
     </header>
   )
