@@ -8,16 +8,16 @@ export default function Footer() {
   return (
     <div className="div-footer">
       <footer className="footer">
-        <div>
+        <div className="icon">
           <p>Cristina Pineda &copy; 2021</p>
         </div>
         <div className="icon">
           <p>Trabalhe comigo</p>
-          <FiCheck size="30px" />  
+          <FiCheck size="1.5rem" />  
         </div>
         <div className="icon">
           <p>Feito e constantemente atualizado com: React</p>
-          <DiReact size="30px"/>
+          <DiReact size="1.5rem"/>
         </div>
       </footer>
     </div>
