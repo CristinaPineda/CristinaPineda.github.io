@@ -112,3 +112,12 @@
 .close:hover {
   color: yellow;
 }
+
+@media (max-width: 768px) {
+  .div-about {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 15px;
+  }
+}
