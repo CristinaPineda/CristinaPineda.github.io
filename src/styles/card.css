@@ -41,3 +41,17 @@
   color: darkgreen;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .formacao {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .div-card {
+    width: 150px;
+  }
+}
