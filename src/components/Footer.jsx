@@ -6,7 +6,7 @@ import { FiCheck } from 'react-icons/fi';
 
 export default function Footer() {
   return (
-    <div>
+    <div className="div-footer">
       <footer className="footer">
         <div>
           <p>Cristina Pineda &copy; 2021</p>

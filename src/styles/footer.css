@@ -1,4 +1,12 @@
+.div-footer {
+    position: relative;
+    margin: 30px auto;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -6,7 +14,7 @@
     color: cornflowerblue;
     font-size: 18px;
     background-color: darkblue;
-    margin: 20px 0;
+
 }
 
 .icon {

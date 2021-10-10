@@ -20,10 +20,10 @@ export default function Home() {
       <div id="modal-content" className="modal-container">
         <Contact />
       </div>
-      <Formacao />
       <div>
-        <Footer/>
+        <Formacao />
       </div>
+      <Footer/>
     </div>
   )
 }
