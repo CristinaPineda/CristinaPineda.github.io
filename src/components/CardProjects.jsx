@@ -30,7 +30,7 @@ export default function CardProjects() {
           <img src={ tictactoe } alt="tic tac toe" width="250px" height="200px"/>
         </div>
         <div className="card-project">
-          <h2>Boostrap project</h2>
+          <h2>Bootstrap project</h2>
           <p>
             Página de uma empresa de arquitetura estruturada com base no Boostrap
           </p>
