@@ -7,8 +7,8 @@
 
 .btns {
   display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -55,6 +55,14 @@
 
 .modal a {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+  }
 }
 
 @keyframes modal {
@@ -119,5 +127,21 @@
     font-size: 17px;
     font-weight: 600;
     margin: 0 15px;
+  }
+
+  .btn-projects {
+    text-align: center;
+    width: 90%;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links p img {
+    width: 35px;
   }
 }
