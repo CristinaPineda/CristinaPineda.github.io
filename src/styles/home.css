@@ -139,6 +139,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .btns.btnsPro {
+    display: flex;
+    justify-content: center;
   }
 
   .links p img {
