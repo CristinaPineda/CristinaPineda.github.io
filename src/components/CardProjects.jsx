@@ -44,7 +44,7 @@ export default function CardProjects() {
           <p>
             Componente estiloso para páginas de pagamento
           </p>
-          <a href="https://cristinapineda.github.io/verifica-cartao/" target="blank">Acesse a aplicação</a>
+          <a href="https://verifica-cartao.herokuapp.com/" target="blank">Acesse a aplicação</a>
           <a href="https://github.com/CristinaPineda/verifica-cartao" target="blank">Link do repositório</a>
           <img src={ cartao } alt="cartao" width="250px" height="200px"/>
         </div>
