@@ -4,6 +4,7 @@ import pixel from '../images/pixel.png';
 import tictactoe from '../images/tictactoe.png';
 import bootstrapImg from '../images/bootstrapImg.png';
 import news from '../images/news.jpeg';
+import cartao from '../images/cartao.png';
 
 export default function CardProjects() {
   return(
@@ -37,6 +38,15 @@ export default function CardProjects() {
           <a href="https://cristinapineda.github.io/boostrap-project/" target="blank">Acesse a aplicação</a>
           <a href="https://github.com/CristinaPineda/boostrap-project" target="blank">Link do repositório</a>
           <img src={ bootstrapImg } alt="boostrap" width="250px" height="200px"/>
+        </div>
+        <div className="card-project">
+          <h2>Verifica cartão</h2>
+          <p>
+            Componente estiloso para páginas de pagamento
+          </p>
+          <a href="https://cristinapineda.github.io/verifica-cartao/" target="blank">Acesse a aplicação</a>
+          <a href="https://github.com/CristinaPineda/verifica-cartao" target="blank">Link do repositório</a>
+          <img src={ cartao } alt="cartao" width="250px" height="200px"/>
         </div>
         <div className="card-project">
           <h2>Em breve</h2>
