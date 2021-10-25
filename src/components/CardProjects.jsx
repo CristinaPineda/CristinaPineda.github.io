@@ -5,6 +5,7 @@ import tictactoe from '../images/tictactoe.png';
 import bootstrapImg from '../images/bootstrapImg.png';
 import news from '../images/news.jpeg';
 import cartao from '../images/cartao.png';
+import qrcode from '../images/qrcode.png';
 
 export default function CardProjects() {
   return(
@@ -47,6 +48,15 @@ export default function CardProjects() {
           <a href="https://verifica-cartao.herokuapp.com/" target="blank">Acesse a aplicação</a>
           <a href="https://github.com/CristinaPineda/verifica-cartao" target="blank">Link do repositório</a>
           <img src={ cartao } alt="cartao" width="250px" height="200px"/>
+        </div>
+        <div className="card-project">
+          <h2>QR Code</h2>
+          <p>
+            Gerador e scanner de qr code
+          </p>
+          <a href="https://cristinapineda.github.io/qrcode/#/" target="blank">Acesse a aplicação</a>
+          <a href="https://github.com/CristinaPineda/qrcode" target="blank">Link do repositório</a>
+          <img src={ qrcode } alt="cartao" width="250px" height="200px"/>
         </div>
         <div className="card-project">
           <h2>Em breve</h2>
