@@ -19,19 +19,19 @@ export default function ButtonProjects() {
   const renderButton = () => {
     if (pathname.includes("/projects")) {
       return (
-        <div className="btns btnsPro">
-          <Buttons onClick={handleClickHome}>HOME</Buttons>
+        <div className="btns">
+          <Buttons onClick={handleClickHome}>Home</Buttons>
         </div>
       );
     } else {
       return (
         <div className="btns">
           <div>
-            <Buttons onClick={handleClick}>PROJETOS</Buttons>
+            <Buttons onClick={handleClick}>Projetos</Buttons>
           </div>
           <div>
             <Buttons onClick={() => startModal("modal-content")}>
-              CONTATO
+              Contato
             </Buttons>
           </div>
         </div>

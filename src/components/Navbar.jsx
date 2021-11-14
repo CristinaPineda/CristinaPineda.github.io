@@ -1,11 +1,11 @@
-import React from 'react';
-import { Nav } from '../styles/Nav';
-import ButtonProjects from '../components/ButtonProjects';
+import React from "react";
+import { Nav } from "../styles/Nav";
+import ButtonProjects from "../components/ButtonProjects";
 
 export default function Navbar() {
-  return(
+  return (
     <Nav>
       <ButtonProjects />
     </Nav>
-  )
+  );
 }

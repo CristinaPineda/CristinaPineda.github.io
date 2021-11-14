@@ -10,9 +10,7 @@ import '../styles/home.css';
 export default function Home() {
   return(
     <div>
-      <div className="nav" >
-        <Navbar /> 
-      </div>
+      <Navbar /> 
       <Header />
       <div className="btn-about">
         <About />
