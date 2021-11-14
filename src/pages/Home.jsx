@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import ButtonProjects from '../components/ButtonProjects';
+import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Formacao from '../components/Formacao';
@@ -10,8 +10,8 @@ import '../styles/home.css';
 export default function Home() {
   return(
     <div>
-      <div className="btn-projects" >
-        <ButtonProjects /> 
+      <div className="nav" >
+        <Navbar /> 
       </div>
       <Header />
       <div className="btn-about">
