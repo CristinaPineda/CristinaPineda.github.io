@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
+  align-items: center;
   background-color: #390aad;
   display: flex;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
   height: 5.5em;
+  justify-content: center;
+  margin: 0;
 
   .btns {
     display: flex;
@@ -26,15 +26,15 @@ export const Nav = styled.nav`
 
 export const Buttons = styled.button`
   background-color: #f87fc4;
+  border-radius: 3px;
+  border: 2px solid #f87fc4;
   color: white;
   font-size: 1em;
   font-weight: 600;
-  border: 2px solid #f87fc4;
-  border-radius: 3px;
   padding: 0 1.3em;
 
   @media (min-width: 768px) {
-    margin: 0 10px;
     font-size: 1.3em;
+    margin: 0 10px;
   }
 `;
