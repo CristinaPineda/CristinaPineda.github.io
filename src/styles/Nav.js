@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   align-items: center;
-  background-color: #390aad;
+  background-color: darkblue;
   display: flex;
   height: 5.5em;
   justify-content: center;

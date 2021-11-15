@@ -15,7 +15,7 @@ export const Skill = styled.div`
     li {
       list-style: none;
       margin: 10px;
-      color: #390aad;
+      color: darkblue;
     }
   }
 
