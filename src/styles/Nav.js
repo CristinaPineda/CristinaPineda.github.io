@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   align-items: center;
   background-color: #001299;
+  color: #eddb3c;
   display: flex;
   height: 5.5em;
-  justify-content: center;
   margin: 0;
+
+  .rocket {
+    margin-left: 20px;
+  }
 
   .btns {
     display: flex;
@@ -15,9 +19,14 @@ export const Nav = styled.nav`
   }
 
   @media (min-width: 768px) {
+    .rocket {
+      margin-left: 50px;
+    }
+
     .btns {
-      margin: auto;
+      flex-direction: row;
       justify-content: flex-end;
+      margin: auto;
       width: 80%;
     }
   }

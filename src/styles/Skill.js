@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const Skill = styled.div`
   display: flex;
-  width: 70%;
   margin: auto;
+  width: 70%;
 
   ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
     justify-content: center;
+    padding: 10px;
 
 
     li {
+      color: white;
       list-style: none;
       margin: 10px;
-      color: white;
     }
   }
 
@@ -24,4 +24,4 @@ export const Skill = styled.div`
   }
 
 }
-`
+`;

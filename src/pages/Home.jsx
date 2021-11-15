@@ -1,24 +1,22 @@
-import React from 'react';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Formacao from '../components/Formacao';
-import Footer from '../components/Footer';
-import Skills from '../components/Skills';
+import React from "react";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Formacao from "../components/Formacao";
+import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 
 export default function Home() {
-  return(
+  return (
     <>
-      <Navbar /> 
+      <Navbar />
       <Header />
       <Skills />
       <About />
       <Formacao />
-      <Footer/>
-      <div id="modal-content" className="modal-container">
-        <Contact />
-      </div>
+      <Footer />
+      <Contact />
     </>
-  )
+  );
 }

@@ -22,9 +22,9 @@ export const Courses = styled.div`
       border: 3px solid #eddb3c;
       border-radius: 10px;
       color: #02142b;
-      width: 180px;
       height: 120px;
       margin: 5px;
+      width: 180px;
     }
   }
 

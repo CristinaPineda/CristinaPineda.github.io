@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
 export const Foot = styled.footer`
+  border-top: 3px solid #eddb3c;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   margin: auto;
-  bottom: 0;
   width: 100%;
-  border-top: 3px solid #eddb3c;
 
   div {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    color: #eddb3c;
     align-items: center;
+    color: #eddb3c;
+    display: flex;
     justify-content: flex-start;
+    margin: auto;
+    width: 90%;
 
     p {
-      margin-right: 5px; 
+      margin-right: 5px;
     }
   }
 
@@ -28,5 +28,4 @@ export const Foot = styled.footer`
       justify-content: center;
     }
   }
-
-`
+`;
