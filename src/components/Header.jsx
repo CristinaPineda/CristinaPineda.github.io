@@ -1,18 +1,14 @@
-import React from 'react';
-import cris from '../images/cris.jpeg';
-import Skills from './Skills';
-import '../styles/header.css';
+import React from "react";
+import cris from "../images/cris.jpeg";
+import { HeaderStyle } from "../styles/Header";
 
 export default function Header() {
   return (
-    <header className="header">
-      <div className="image">
-        <img src={ cris } alt="foto Cristina" width="220em" id="my-photo" />
-        <h1>
-          Cristina Pineda Web Developer /{'>'}
-        </h1>
+    <HeaderStyle className="header">
+      <div className="div-header">
+        <img src={cris} alt="foto Cristina" width="200em" id="my-photo" />
+        <h1>Cristina Pineda Web Developer /{">"}</h1>
       </div>
-      <Skills />
-    </header>
-  )
+    </HeaderStyle>
+  );
 }
