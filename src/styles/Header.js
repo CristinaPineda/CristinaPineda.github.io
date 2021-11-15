@@ -7,15 +7,15 @@ export const HeaderStyle = styled.header`
   width: 60%;
 
   .div-header {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     color: white;
+    display: flex;
+    flex-direction: column;
 
     img {
-      width: 8em;
-      border: 3px solid #f87fc4;
       border-radius: 2px 50px;
+      border: 3px solid #f87fc4;
+      width: 8em;
     }
   }
 

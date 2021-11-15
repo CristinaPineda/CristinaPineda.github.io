@@ -5,7 +5,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Formacao from '../components/Formacao';
 import Footer from '../components/Footer';
-import '../styles/home.css';
+// import { Modal } from "../styles/Modal";
 
 export default function Home() {
   return(
