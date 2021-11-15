@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-// import { Modal } from "../styles/Modal";
+import '../styles/home.css';
 
 export default function Contact() {
   return (

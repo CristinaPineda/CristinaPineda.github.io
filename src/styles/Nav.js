@@ -10,15 +10,14 @@ export const Nav = styled.nav`
 
   .btns {
     display: flex;
+    justify-content: center;
     width: 90%;
   }
 
   @media (min-width: 768px) {
-    justify-content: flex-end;
-
     .btns {
-      align-items: flex-end;
       margin: auto;
+      justify-content: flex-end;
       width: 80%;
     }
   }
