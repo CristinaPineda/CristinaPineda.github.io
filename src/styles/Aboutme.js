@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Aboutme = styled.div`
-  color: #390aad;
+  color: #fff;
   width: 80%;
   tex-align: center;
   margin: auto;
@@ -14,5 +14,9 @@ export const Aboutme = styled.div`
 
   p {
     width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 60%;
   }
 `

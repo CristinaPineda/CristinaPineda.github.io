@@ -17,7 +17,7 @@ const courses = [
     },
     {
       escola: "Anhanguera",
-      curso: "Business intelligence, big data e analytics",
+      curso: "BI, big data e analytics",
     },
     {
       escola: "Mackenzie",
