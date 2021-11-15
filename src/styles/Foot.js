@@ -6,19 +6,26 @@ export const Foot = styled.footer`
   margin: auto;
   bottom: 0;
   width: 100%;
-  background-color: darkblue;
-  color: darkpurple;
+  border-top: 3px solid #eddb3c;
 
   div {
     display: flex;
     width: 90%;
     margin: auto;
-    color: #b0c4de;
+    color: #eddb3c;
     align-items: center;
     justify-content: flex-start;
 
     p {
       margin-right: 5px; 
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    div {
+      justify-content: center;
     }
   }
 

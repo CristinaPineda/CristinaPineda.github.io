@@ -8,13 +8,13 @@ export const HeaderStyle = styled.header`
 
   .div-header {
     align-items: center;
-    color: white;
+    color: #eddb3c;
     display: flex;
     flex-direction: column;
 
     img {
       border-radius: 2px 50px;
-      border: 3px solid #f87fc4;
+      border: 3px solid #eddb3c;
       width: 8em;
     }
   }

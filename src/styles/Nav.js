@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   align-items: center;
-  background-color: darkblue;
+  background-color: #001299;
   display: flex;
   height: 5.5em;
   justify-content: center;
@@ -24,12 +24,11 @@ export const Nav = styled.nav`
 `;
 
 export const Buttons = styled.button`
-  background-color: #f87fc4;
+  background-color: #eddb3c;
   border-radius: 3px;
-  border: 2px solid #f87fc4;
-  color: white;
+  border: 2px solid #eddb3c;
+  color: #001299;
   font-size: 1em;
-  font-weight: 600;
   padding: 0 1.3em;
   margin: 0 10px;
 
