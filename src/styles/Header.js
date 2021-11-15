@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   width: 60%;
 
   .div-header {
