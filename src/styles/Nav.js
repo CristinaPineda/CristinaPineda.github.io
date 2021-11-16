@@ -40,8 +40,4 @@ export const Buttons = styled.button`
   font-size: 1em;
   padding: 0 1.3em;
   margin: 0 10px;
-
-  @media (min-width: 768px) {
-    font-size: 1.3em;
-  }
 `;

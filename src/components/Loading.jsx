@@ -1,5 +1,10 @@
 import React from "react";
+import Load from "../styles/Load";
 
 export default function Loading() {
-  return <h1>Carregando projetos...</h1>;
+  return (
+    <Load>
+      <h1> Carregando projetos...</h1>
+    </Load>
+  )
 }
