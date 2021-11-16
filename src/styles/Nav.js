@@ -14,8 +14,9 @@ export const Nav = styled.nav`
 
   .btns {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 90%;
+    margin-right: 20px;
   }
 
   @media (min-width: 768px) {
@@ -25,7 +26,6 @@ export const Nav = styled.nav`
 
     .btns {
       flex-direction: row;
-      justify-content: flex-end;
       margin: auto;
       width: 80%;
     }
