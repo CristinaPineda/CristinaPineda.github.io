@@ -1,68 +1,45 @@
-import React from 'react';
-import todo from '../images/todo.png';
-import pixel from '../images/pixel.png';
-import tictactoe from '../images/tictactoe.png';
-import bootstrapImg from '../images/bootstrapImg.png';
-import news from '../images/news.jpeg';
-import cartao from '../images/cartao.png';
-import qrcode from '../images/qrcode.png';
+import React, { useEffect, useState } from "react";
+import Loading from "./Loading";
+import news from "../images/news.jpeg";
+import Cards from "../styles/Cards";
 
 export default function CardProjects() {
-  return(
-      <div className="projects">
-        <div className="card-project">
-          <h2>Pixels Art</h2>
-          <p>Divirta-se criando desenhos ponto a ponto</p>
-          <a href="https://cristinapineda.github.io/pixelsArt/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/pixelsArt" target="blank">Link do repositório</a>
-          <img src={ pixel } alt="pixels art" width="250px" height="200px"/>
-        </div>
-        <div className="card-project">
-          <h2>To do list</h2>
-          <p>Crie listas de forma dinamica</p>
-          <a href="https://cristinapineda.github.io/to-do-list-redux/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/to-do-list-redux" target="blank">Link do repositório</a>
-          <img src={ todo } alt="todo" width="250px" height="200px"/>
-        </div>
-        <div className="card-project">
-          <h2>Tic tac toe</h2>
-          <p>Clássico jogo em React</p>
-          <a href="https://tic-tac-toe-react-cris.herokuapp.com/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/tic-tac-toe-react" target="blank">Link do repositório</a>
-          <img src={ tictactoe } alt="tic tac toe" width="250px" height="200px"/>
-        </div>
-        <div className="card-project">
-          <h2>Bootstrap project</h2>
-          <p>
-            Página de uma empresa de arquitetura estruturada com base no Boostrap
-          </p>
-          <a href="https://cristinapineda.github.io/boostrap-project/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/boostrap-project" target="blank">Link do repositório</a>
-          <img src={ bootstrapImg } alt="boostrap" width="250px" height="200px"/>
-        </div>
-        <div className="card-project">
-          <h2>Verifica cartão</h2>
-          <p>
-            Componente estiloso para páginas de pagamento
-          </p>
-          <a href="https://verifica-cartao.herokuapp.com/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/verifica-cartao" target="blank">Link do repositório</a>
-          <img src={ cartao } alt="cartao" width="250px" height="200px"/>
-        </div>
-        <div className="card-project">
-          <h2>QR Code</h2>
-          <p>
-            Gerador e scanner de qr code
-          </p>
-          <a href="https://cristinapineda.github.io/qrcode/#/" target="blank">Acesse a aplicação</a>
-          <a href="https://github.com/CristinaPineda/qrcode" target="blank">Link do repositório</a>
-          <img src={ qrcode } alt="cartao" width="250px" height="200px"/>
-        </div>
+  const [project, setProject] = useState([]);
+
+  useEffect(() => {
+    async function getProject() {
+      const endpoint = "https://api-projects-cris.herokuapp.com/project";
+      const itens = await fetch(endpoint);
+      const data = await itens.json();
+      console.log(data);
+      return setProject(data);
+    }
+    getProject();
+  }, [setProject]);
+
+  if (project.length === 0) return <Loading />;
+  else
+    return (
+      <Cards>
+        {project.map((item) => (
+          <div key={item._id} className="card-project">
+            <h2>{item.titleProject}</h2>
+            <p>{item.descriptionProject}</p>
+            <a href={item.linkApp}>Acesse a aplicação</a>
+            <a href={item.linkRepository}>Link do repositório</a>
+            <img
+              src={item.imageProject}
+              alt={item.titleProject}
+              width="250px"
+              height="200px"
+            />
+          </div>
+        ))}
         <div className="card-project">
           <h2>Em breve</h2>
           <p>Novo projeto em construção!</p>
-          <img src={ news } alt="news" />
+          <img src={news} alt="news" />
         </div>
-      </div>
-  )
+      </Cards>
+    );
 }
