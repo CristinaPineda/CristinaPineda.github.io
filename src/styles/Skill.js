@@ -11,17 +11,15 @@ export const Skill = styled.div`
     justify-content: center;
     padding: 10px;
 
-
     li {
       color: white;
       list-style: none;
       margin: 10px;
     }
   }
-
+  
   @media (min-width: 768px) {
     justify-content: center;
   }
-
 }
 `;

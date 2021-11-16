@@ -11,14 +11,22 @@ export default function CardProjects() {
       const endpoint = "https://api-projects-cris.herokuapp.com/project";
       const itens = await fetch(endpoint);
       const data = await itens.json();
-      console.log(data);
       return setProject(data);
     }
     getProject();
   }, [setProject]);
 
-  if (project.length === 0) return <Loading />;
-  else
+  const nextProject = () => {
+    return (
+      <div className="card-project">
+        <h2>Em breve</h2>
+        <p>Novo projeto em construção!</p>
+        <img src={news} alt="news" />
+      </div>
+    );
+  };
+
+  const cards = () => {
     return (
       <Cards>
         {project.map((item) => (
@@ -35,11 +43,17 @@ export default function CardProjects() {
             />
           </div>
         ))}
-        <div className="card-project">
-          <h2>Em breve</h2>
-          <p>Novo projeto em construção!</p>
-          <img src={news} alt="news" />
-        </div>
+        {nextProject()}
       </Cards>
     );
+  };
+
+  const renderCards = () => {
+    if (project.length === 0) {
+      return <Loading />;
+    }
+    return cards();
+  };
+
+  return renderCards();
 }
