@@ -8,7 +8,7 @@ export default function CardProjects() {
 
   useEffect(() => {
     async function getProject() {
-      const endpoint = "https://api-projects-cris.herokuapp.com/project";
+      const endpoint = "https://api-projects-cris.herokuapp.com/portfolio/project";
       const itens = await fetch(endpoint);
       const data = await itens.json();
       return setProject(data);
