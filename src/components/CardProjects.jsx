@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loading from "./Loading";
 import news from "../images/news.jpeg";
 import Cards from "../styles/Cards";
+// testando
 
 export default function CardProjects() {
   const [project, setProject] = useState([]);
