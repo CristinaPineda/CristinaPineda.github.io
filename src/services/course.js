@@ -23,6 +23,10 @@ const courses = [
     escola: "Mackenzie",
     curso: "Gestão de projetos",
   },
+  {
+    escola: "Univesp",
+    curso: "Matematica"
+  }
 ];
 
 export default courses;

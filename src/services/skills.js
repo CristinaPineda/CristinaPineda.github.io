@@ -1,9 +1,10 @@
 import {
   SiJavascript,
-  SiMaterialui,
   SiPython,
   SiExpress,
   SiMongodb,
+  SiGitlab,
+  SiGraphql
 } from "react-icons/si";
 import {
   FaHtml5,
@@ -13,10 +14,15 @@ import {
   FaGithub,
   FaFigma,
   FaNodeJs,
+  FaAws,
 } from "react-icons/fa";
 import { ImGit } from "react-icons/im";
 
 const skill = [
+  {
+    name: "Reactjs",
+    simbol: <FaReact size="2rem" />,
+  },
   {
     name: "Javascript",
     simbol: <SiJavascript size="2rem" />,
@@ -30,16 +36,8 @@ const skill = [
     simbol: <FaCss3 size="2rem" />,
   },
   {
-    name: "Reactjs",
-    simbol: <FaReact size="2rem" />,
-  },
-  {
     name: "Bootstrap",
     simbol: <FaBootstrap size="2rem" />,
-  },
-  {
-    name: "MaterialUi",
-    simbol: <SiMaterialui size="2rem" />,
   },
   {
     name: "Git",
@@ -50,8 +48,16 @@ const skill = [
     simbol: <FaGithub size="2rem" />,
   },
   {
+    name: "GitLab",
+    simbol: <SiGitlab size="2rem" />,
+  },
+  {
     name: "Python",
     simbol: <SiPython size="2rem" />,
+  },
+  {
+    name: "Aws",
+    simbol: <FaAws size="2rem" />,
   },
   {
     name: "Figma",
@@ -68,6 +74,10 @@ const skill = [
   {
     name: "Mongodb",
     simbol: <SiMongodb size="2rem" />,
+  },
+  {
+    name: "GraphQL",
+    simbol: <SiGraphql size="2rem" />,
   },
 ];
 
