@@ -8,7 +8,7 @@ export const HeaderStyle = styled.header`
 
   .div-header {
     align-items: center;
-    color: #eddb3c;
+    color: #FF1493;
     display: flex;
     flex-direction: column;
 

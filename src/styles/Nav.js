@@ -38,6 +38,6 @@ export const Buttons = styled.button`
   border: 2px solid #eddb3c;
   color: #001299;
   font-size: 1em;
-  padding: 0 1.3em;
+  padding: 0 2.8em;
   margin: 0 10px;
 `;

@@ -7,7 +7,10 @@ export default function Header() {
     <HeaderStyle className="header">
       <div className="div-header">
         <img src={cris} alt="foto Cristina" width="200em" id="my-photo" />
-        <h1>Cristina Pineda Web Developer /{">"}</h1>
+        <div>
+          <h1>Cristina Pineda  /{">"}</h1>
+          <h3>software engineer</h3>
+        </div>
       </div>
     </HeaderStyle>
   );

@@ -19,7 +19,7 @@ export const Courses = styled.div`
     .div-card {
       align-items: center;
       background-color: #fff;
-      border: 3px solid #eddb3c;
+      border: 3px solid #FF1493;
       border-radius: 10px;
       color: #02142b;
       height: 120px;

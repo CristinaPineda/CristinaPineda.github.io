@@ -16,10 +16,10 @@ export default function Footer() {
       </div>
       <div>
         <p>Feito e atualizado com: React</p>
-        <DiReact size="1.5rem" />
+        <DiReact size="1.5rem" color="lightblue" />
       </div>
       <div>
-        <p>Atualizado em Jun/2022</p>
+        <p>Atualizado em Jun/2023</p>
         <FiRefreshCcw size="1.0rem" />
       </div>
     </Foot>

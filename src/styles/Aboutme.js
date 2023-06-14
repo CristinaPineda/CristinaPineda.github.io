@@ -9,7 +9,7 @@ export const Aboutme = styled.div`
   font-weight: 600;
   margin: auto;
   padding: 10px;
-  tex-align: center;
+  text-align: center;
   width: 80%;
 
   p {

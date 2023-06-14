@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Foot = styled.footer`
-  border-top: 3px solid #eddb3c;
+  border-top: 3px solid #FF1493;
   bottom: 0;
   display: flex;
   flex-direction: column;
