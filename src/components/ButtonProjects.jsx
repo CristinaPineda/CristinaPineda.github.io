@@ -23,10 +23,13 @@ export default function ButtonProjects() {
     return (
       <div className="btns">
         <div>
-          <Buttons onClick={handleClick}>Projetos</Buttons>
+          <Buttons onClick={handleClick}>PROJECTS</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>Contato</Buttons>
+          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
+        </div>
+        <div>
+          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
         </div>
       </div>
     );

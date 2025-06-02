@@ -11,6 +11,11 @@ export default function Skills() {
             <li className="size">{item.simbol}</li>
           </div>
         ))}
+                {skill.map((item) => (
+          <div key={item.name}>
+            <li className="size">{item.simbol}</li>
+          </div>
+        ))}
       </ul>
     </Skill>
   );

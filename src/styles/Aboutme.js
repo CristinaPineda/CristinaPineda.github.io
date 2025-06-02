@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 export const Aboutme = styled.div`
-  background-color: rgba(237, 219, 60, 0.8);
-  border-radius: 2px 50px;
-  border: 3px solid #eddb3c;
-  color: #02142b;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: auto;
+  background-color: #02142c;
+  color: rgb(60 237 230);
+  font-size: 1.2rem;
+  font-weight: 400;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   width: 80%;
 
   p {
