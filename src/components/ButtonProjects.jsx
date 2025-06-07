@@ -14,7 +14,15 @@ export default function ButtonProjects() {
   const goHome = () => {
     return (
       <div className="btns">
-        <Buttons onClick={handleClickHome}>Home</Buttons>
+        <div>
+          <Buttons onClick={handleClickHome}>HOME</Buttons>
+        </div>
+        <div>
+          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
+        </div>
+        <div>
+          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
+        </div>
       </div>
     );
   };
