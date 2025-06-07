@@ -18,7 +18,7 @@
 
 .modal {
   background-color: rgba(0,18,153, .8);
-  border: 5px solid #eddb3c;
+  border: 5px solid rgb(60 237 230);
   border-radius: 7px;
   color: #eddb3c;
   display: flex;

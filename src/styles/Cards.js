@@ -12,7 +12,7 @@ const Cards = styled.div`
   .card-project {
     align-items: center;
     background-color: lavender;
-    border: 5px solid #eddb3c;
+    border: 5px solid rgb(60 237 230);
     border-radius: 2px 50px;
     color: #02142b;
     display: flex;

@@ -18,10 +18,10 @@ export default function ButtonProjects() {
           <Buttons onClick={handleClickHome}>HOME</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
+          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
+          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
         </div>
       </div>
     );
@@ -34,10 +34,10 @@ export default function ButtonProjects() {
           <Buttons onClick={handleClick}>PROJECTS</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
+          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
+          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
         </div>
       </div>
     );
