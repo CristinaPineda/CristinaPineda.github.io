@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import Navbar from '../components/Navbar';
-import CardProjects from '../components/CardProjects';
+import Navbar from "../components/Navbar";
+import Pageabout from "../components/Pageabout";
 
 import background from "../images/9019808.jpg";
 
@@ -15,11 +15,11 @@ const HomeWrapper = styled.div`
   width: 100%; /* Garante que o container ocupe a largura total */
 `;
 
-export default function Projects() {
-  return(
+export default function Pageaboutme() {
+  return (
     <HomeWrapper>
-      <Navbar /> 
-      <CardProjects />
+      <Navbar />
+      <Pageabout />
     </HomeWrapper>
-  )
+  );
 }

@@ -1,14 +1,13 @@
 import React from "react";
 import { useHistory } from "react-router";
-import { useLocation } from "react-router-dom";
 import { Buttons } from "../styles/Nav";
 import startModal from "../services/modal";
 
 export default function ButtonProjects() {
   const goProjects = useHistory();
-  const { pathname } = useLocation();
 
-  const handleClick = () => goProjects.push("/projects");
+  const handleClickProjects = () => goProjects.push("/projects");
+  const handleClickAbout = () => goProjects.push("/pageabout");
   const handleClickHome = () => goProjects.push("/");
 
   const goHome = () => {
@@ -18,23 +17,10 @@ export default function ButtonProjects() {
           <Buttons onClick={handleClickHome}>HOME</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
+          <Buttons onClick={handleClickProjects}>PROJECTS</Buttons>
         </div>
         <div>
-          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
-        </div>
-      </div>
-    );
-  };
-
-  const pageProject = () => {
-    return (
-      <div className="btns">
-        <div>
-          <Buttons onClick={handleClick}>PROJECTS</Buttons>
-        </div>
-        <div>
-          <Buttons onClick={() => startModal("modal-content")}>ABOUT</Buttons>
+          <Buttons onClick={handleClickAbout}>ABOUT</Buttons>
         </div>
         <div>
           <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
@@ -44,10 +30,7 @@ export default function ButtonProjects() {
   };
 
   const renderButton = () => {
-    if (pathname.includes("/projects")) {
       return goHome();
-    }
-    return pageProject();
   };
 
   return renderButton();
