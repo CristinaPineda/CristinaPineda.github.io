@@ -3,6 +3,7 @@ import cris from "../images/cris.jpeg";
 import About from "../components/About";
 import avatar from "../images/avatar.jpg";
 import { HeaderStyle } from "../styles/Header";
+import fundo from "../images/fundo.png";
 
 export default function Header() {
   return (

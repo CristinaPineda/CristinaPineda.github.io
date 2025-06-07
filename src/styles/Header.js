@@ -11,16 +11,17 @@ export const HeaderStyle = styled.header`
     align-items: flex-start;
     color: rgb(255 20 193);
     display: flex;
-    justify-content : space-around;
+    justify-content : space-evenly;
 
     .div-hs {
       text-align: left;
-    }
+      width: 60%;
+   }
 
     img {
-      border-radius: 2px 50px;
+      border-radius: 50px 3px;
       border: 3px solid rgb(60 237 230);
-      width: 18em;
+      width: 20em;
     }
   }
 
