@@ -14,11 +14,12 @@ const textGradientAnimation = keyframes`
 
 const Load = styled.div`
   height: 30rem;
-  font-size: 3em;
+  font-size: 1em;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
 
   background: linear-gradient(to left, rgba(224, 16, 207, 1), rgba(9, 9, 121, 1), rgba(0, 212, 255, 1),rgba(224, 16, 207, 1));
   background-size: 400% 400%;
