@@ -22,7 +22,10 @@ export default function CardProjects() {
       <div className="card-project">
         <h2>Em breve</h2>
         <p>Novo projeto em construção!</p>
-        <img src={news} alt="news" />
+        <img src={news} 
+            alt="news"
+            width="250px"
+            height="200px" />
       </div>
     );
   };
