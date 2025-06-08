@@ -32,8 +32,8 @@ export const Skill = styled.div`
     /* Isso geralmente é feito no HTML duplicando os itens, mas aqui no CSS podemos dar um hint */
     /* O mais importante é que a ul **contenha duas cópias do seu conteúdo** */
 
-    animation: ${moverLiEsquerda} 20s linear infinite; /* A duração (10s) deve ser ajustada para a velocidade desejada */
-
+    animation: ${moverLiEsquerda} 10s linear infinite; /* A duração (10s) deve ser ajustada para a velocidade desejada */
+  }
     /* Pausa a animação ao passar o mouse */
     &:hover {
       animation-play-state: paused;
@@ -41,9 +41,8 @@ export const Skill = styled.div`
 
     li {
       list-style: none;
-      margin: 10px 30px;
-      padding: 15px 25px;
-      border-radius: 8px;
+      margin: 18px;
+      padding: 1px;
       color: #fff;
       font-weight: bold;
       white-space: nowrap; /* Impede que o texto dentro do li quebre linha */
