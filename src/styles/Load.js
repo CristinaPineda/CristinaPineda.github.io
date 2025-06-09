@@ -32,6 +32,7 @@ const Load = styled.div`
   @media (min-width: 768px) {
     height: 38rem;
     font-size: 1em;
+    margin: auto;
   }
 `;
 
