@@ -37,14 +37,39 @@ export const HeaderStyle = styled.header`
   }
 
   @media (min-width: 768px) {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 80%;
+    align-items: center;
 
     .div-header {
-
+      align-items: flex-start;
+      color: rgb(255 20 193);
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
 
       img {
+        width: 15rem;
+      }
 
+      .div-hs {
+      text-align: left;
+      width: 100%;
+
+      h3 {
+        text-align: left;
+      }
+
+      h1 {
+        text-align: left;
       }
     }
+    }
+
+
   }
 `;

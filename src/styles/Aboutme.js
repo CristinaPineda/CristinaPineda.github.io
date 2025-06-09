@@ -14,6 +14,11 @@ export const Aboutme = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 60%;
+    width: 75%;
+
+    p {
+      text-align: left;
+      font-size: 1.2rem;
+    }
   }
 `;

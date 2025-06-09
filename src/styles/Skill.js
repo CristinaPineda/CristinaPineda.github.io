@@ -32,7 +32,7 @@ export const Skill = styled.div`
     /* Isso geralmente é feito no HTML duplicando os itens, mas aqui no CSS podemos dar um hint */
     /* O mais importante é que a ul **contenha duas cópias do seu conteúdo** */
 
-    animation: ${moverLiEsquerda} 10s linear infinite; /* A duração (10s) deve ser ajustada para a velocidade desejada */
+    animation: ${moverLiEsquerda} 20s linear infinite; /* A duração (10s) deve ser ajustada para a velocidade desejada */
   }
     /* Pausa a animação ao passar o mouse */
     &:hover {
@@ -52,5 +52,6 @@ export const Skill = styled.div`
 
   @media (min-width: 768px) {
     justify-content: center;
+
   }
 `;
