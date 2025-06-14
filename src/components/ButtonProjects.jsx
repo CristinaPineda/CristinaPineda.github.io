@@ -10,28 +10,12 @@ export default function ButtonProjects() {
   const handleClickAbout = () => goProjects.push("/pageabout");
   const handleClickHome = () => goProjects.push("/");
 
-  const goHome = () => {
     return (
-      <div className="btns">
-        <div>
-          <Buttons onClick={handleClickHome}>HOME</Buttons>
-        </div>
-        <div>
-          <Buttons onClick={handleClickProjects}>PROJECTS</Buttons>
-        </div>
-        <div>
-          <Buttons onClick={handleClickAbout}>ABOUT</Buttons>
-        </div>
-        <div>
-          <Buttons onClick={() => startModal("modal-content")}>CONTACT</Buttons>
-        </div>
-      </div>
+      <>
+          <Buttons className="style-btn" onClick={handleClickHome}>HOME</Buttons>
+          <Buttons className="style-btn" onClick={handleClickProjects}>PROJECTS</Buttons>
+          <Buttons className="style-btn" onClick={handleClickAbout}>ABOUT</Buttons>
+          <Buttons className="style-btn" onClick={() => startModal("modal-content")}>CONTACT</Buttons>
+      </>
     );
-  };
-
-  const renderButton = () => {
-      return goHome();
-  };
-
-  return renderButton();
 }
