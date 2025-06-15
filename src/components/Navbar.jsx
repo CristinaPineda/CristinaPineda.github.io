@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import { Nav } from "../styles/Nav";
+import { Nav, AnimatedLineContainer } from "../styles/Nav";
 import ButtonProjects from "../components/ButtonProjects";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { GrHomeRounded } from "react-icons/gr";
@@ -28,6 +28,7 @@ export default function Navbar() {
       <div className="btns-desktop">
         <ButtonProjects />
       </div>
+      <AnimatedLineContainer />
     </Nav>
   );
 }

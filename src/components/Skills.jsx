@@ -1,20 +1,21 @@
 import React from "react";
-import skill from "../services/skills";
-import { Skill } from "../styles/Skill";
+import skillData from "../services/skills";
+import { Skill, ListItem } from "../styles/Skill"; 
+
+const getRandomDelay = () => `-${Math.random() * 4}s`;
 
 export default function Skills() {
   return (
     <Skill>
       <ul>
-        {skill.map((item) => (
-          <div key={item.name}>
-            <li className="size">{item.simbol}</li>
-          </div>
-        ))}
-                {skill.map((item) => (
-          <div key={item.name}>
-            <li className="size">{item.simbol}</li>
-          </div>
+        {skillData.map((item, index) => (
+          <ListItem
+            className="size"
+            key={`${item.name}-${index}-1`}
+            animationDelay={getRandomDelay()}
+          >
+            {item.simbol}
+          </ListItem>
         ))}
       </ul>
     </Skill>

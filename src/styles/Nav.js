@@ -10,20 +10,16 @@ const moverGradiente = keyframes`
 `;
 
 export const Buttons = styled.div`
-  /* Estilos mobile-first para Buttons (sem media query aqui) */
-  font-size: 1em; /* Tamanho base para mobile */
-  padding: 0 1em; /* Ajustado para mobile, pode ser mais compacto */
-  margin: 0; /* Ajustado para mobile */
+  font-size: 1em;
+  padding: 0 1em;
+  margin: 0;
   position: relative;
   cursor: pointer;
-  display: flex; /* Adicionado display flex para Buttons no mobile */
+  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: normal;
 
-  /* Os estilos de hover para Buttons estavam dentro da media query,
-     coloque-os aqui para que funcionem em mobile também se desejar,
-     ou os mantenha na media query se for só para desktop. */
   &::after {
     content: '→';
     position: absolute;
@@ -36,7 +32,6 @@ export const Buttons = styled.div`
 
   &:hover {
     font-weight: bold;
-    /* .style-btn:hover { color: red; } // Removido, pois você está estilizando o próprio Buttons */
   }
 
   &:hover::after {
@@ -45,11 +40,35 @@ export const Buttons = styled.div`
   }
 
   @media (min-width: 768px) {
-    /* Estilos específicos de desktop para Buttons */
-    padding: 0 2.8em; /* Padding maior para desktop */
-    margin: 0 10px; /* Margem entre botões para desktop */
+    padding: 0 2.8em;
+    margin: 0 10px;
   }
 `;
+
+// Novo componente estilizado para conter a linha animada
+export const AnimatedLineContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ocupa a largura da Nav */
+  height: 3px; /* A altura da linha */
+  overflow: hidden; /* **AQUI ESTÁ A MUDANÇA PRINCIPAL:** Agora o overflow: hidden está aqui! */
+  z-index: 1; /* Garante que esteja acima do conteúdo da Nav se necessário */
+
+  /* A pseudo-classe ::after será a linha animada real dentro deste container */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%; /* Continua sendo 200% para a animação */
+    height: 100%; /* Ocupa 100% da altura do AnimatedLineContainer (3px) */
+    background: linear-gradient(to left, rgba(224, 16, 207, 1), rgba(9, 9, 121, 1), rgba(0, 212, 255, 1), rgba(224, 16, 207, 1));
+    background-size: 50% 100%;
+    animation: ${moverGradiente} 5s linear infinite;
+  }
+`;
+
 
 export const Nav = styled.nav`
   align-items: center;
@@ -58,8 +77,7 @@ export const Nav = styled.nav`
   height: 5.5em;
   margin: 0;
   position: relative;
-  /* Remova 'overflow: hidden;' do estilo base (mobile) da Nav */
-  /* Ele será aplicado apenas no desktop abaixo */
+  /* >>> REMOVEMOS overflow: hidden; daqui! <<< */
   justify-content: space-between;
 
   .rocket {
@@ -79,7 +97,6 @@ export const Nav = styled.nav`
     display: none;
   }
 
-  /* O display é controlado pela prop isOpen */
   .btns-mobile {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
@@ -98,10 +115,11 @@ export const Nav = styled.nav`
     padding: 10px 20px;
     width: 100%;
     text-align: center;
-    
   }
 
-  /* A linha de gradiente ainda precisa de z-index e position relative na Nav */
+  /* A pseudo-classe ::after da Nav não será mais a linha animada,
+     ela foi movida para AnimatedLineContainer. */
+  /* Removemos este bloco:
   &::after {
     content: '';
     position: absolute;
@@ -114,13 +132,10 @@ export const Nav = styled.nav`
     animation: ${moverGradiente} 5s linear infinite;
     z-index: 1;
   }
+  */
 
   @media (min-width: 768px) {
-    /* **AQUI ESTÁ A MUDANÇA MAIS IMPORTANTE:** */
-    /* Aplicamos overflow: hidden; apenas para desktop,
-       onde o menu mobile não é visível e a Nav precisa dele para a animação. */
-    overflow: hidden;
-
+    /* Não precisa de overflow: hidden; aqui */
     .rocket {
       margin-left: 50px;
     }

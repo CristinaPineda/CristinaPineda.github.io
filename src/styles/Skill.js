@@ -1,57 +1,81 @@
 import styled, { keyframes } from "styled-components";
 
+// Definindo as cores
+const colors = {
+  blue: '#0200fe',    // Azul puro
+  cyan: '#00FFFF',    // Ciano puro
+  pink: '#ea1fc0',    // Rosa claro
+  purple: '#8533FF',  // Roxo
+};
 
-// 2. Animação para o li se mover para a esquerda (ajustada para loop contínuo)
-const moverLiEsquerda = keyframes`
+// Animação keyframes para a mudança de cor
+const colorOscillation = keyframes`
   0% {
-    transform: translateX(-50%); /* Posição inicial */
+    color: ${colors.blue};
+  }
+  25% {
+    color: ${colors.cyan};
+  }
+  50% {
+    color: ${colors.pink};
+  }
+  75% {
+    color: ${colors.purple};
   }
   100% {
-    transform: translateX(0); /* Move a ul 50% de sua largura para a esquerda */
+    color: ${colors.blue};
   }
 `;
 
 export const Skill = styled.div`
   display: flex;
   margin: auto;
-  width: 100%;
-  overflow: hidden; /* Importante para cortar os li's quando saírem da tela */
+  width: 95%;
+  overflow: hidden;
   position: relative;
+  min-height: 100px;
+  align-items: center;
 
   ul {
     display: flex;
-    flex-wrap: nowrap; /* Impede que os li's quebrem linha */
-    justify-content: flex-start; /* Alinha os itens ao início */
-    padding: 10px;
-    
-    /* ESSENCIAL: Defina o tamanho da ul para ser DUAS VEZES a largura do seu conteúdo */
-    width: auto; /* Remove width: fit-content para permitir flexibilidade */
-    min-width: 100%;
-
-    /* Ajuste o background-size para que a ul tenha o dobro da largura necessária para um ciclo */
-    /* Isso geralmente é feito no HTML duplicando os itens, mas aqui no CSS podemos dar um hint */
-    /* O mais importante é que a ul **contenha duas cópias do seu conteúdo** */
-
-    animation: ${moverLiEsquerda} 20s linear infinite; /* A duração (10s) deve ser ajustada para a velocidade desejada */
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 100%;
   }
-    /* Pausa a animação ao passar o mouse */
-    &:hover {
-      animation-play-state: paused;
-    }
 
-    li {
-      list-style: none;
-      margin: 18px;
-      padding: 1px;
-      color: #fff;
-      font-weight: bold;
-      white-space: nowrap; /* Impede que o texto dentro do li quebre linha */
-      flex-shrink: 0; /* Impede que os li's encolham */
-
+  li {
+    padding: 0.8rem 0.2rem;
   }
 
   @media (min-width: 768px) {
-    justify-content: center;
-
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
   }
+  }
+`;
+
+
+export const ListItem = styled.li`
+  flex-shrink: 0;
+  padding: 0 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+
+  animation: ${colorOscillation} 4s linear infinite;
+
+  animation-delay: ${props => props.animationDelay};
 `;
