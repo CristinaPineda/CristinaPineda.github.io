@@ -38,7 +38,7 @@ export default function CardProjects() {
             <h2>{item.titleProject}</h2>
             <p>{item.descriptionProject}</p>
             <a href={item.linkApp}>Acesse a aplicação</a>
-            <a href={item.linkRepository}>Link do repositório</a>
+            <a href={item.linkRepository}>Repositório git</a>
             <img
               src={item.imageProject}
               alt={item.titleProject}

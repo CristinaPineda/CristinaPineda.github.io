@@ -23,14 +23,28 @@ const Cards = styled.div`
     margin: 30px;
     width: 250px;
 
+    h2 {
+      margin: 0.83em 0 0 0;
+    }
+
     p {
-      color: darkgreen;
+      color: #0200fe;
       font-weight: 600;
     }
 
     a {
       color: #02142b;
       text-decoration: none;
+      margin-bottom: 0.83em;
+      background-color: #3eebe5;
+      padding: 0.4em 0.9em;
+      border-radius: 10px;
+    }
+
+    a:hover {
+      color: #3eebe5;
+      background-color: #0200fe;
+
     }
   }
 

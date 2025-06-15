@@ -20,6 +20,8 @@ const Load = styled.div`
   justify-content: center;
   align-items: center;
   width: 90%;
+  margin: auto;
+
 
   background: linear-gradient(to left, rgba(224, 16, 207, 1), rgba(9, 9, 121, 1), rgba(0, 212, 255, 1),rgba(224, 16, 207, 1));
   background-size: 400% 400%;
