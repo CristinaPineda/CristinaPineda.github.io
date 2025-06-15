@@ -7,7 +7,7 @@ const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
 
   .card-project {
     align-items: center;

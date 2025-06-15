@@ -20,6 +20,7 @@ export const Buttons = styled.div`
   justify-content: center;
   font-weight: normal;
 
+
   &::after {
     content: '→';
     position: absolute;
@@ -45,30 +46,27 @@ export const Buttons = styled.div`
   }
 `;
 
-// Novo componente estilizado para conter a linha animada
 export const AnimatedLineContainer = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; /* Ocupa a largura da Nav */
-  height: 3px; /* A altura da linha */
-  overflow: hidden; /* **AQUI ESTÁ A MUDANÇA PRINCIPAL:** Agora o overflow: hidden está aqui! */
-  z-index: 1; /* Garante que esteja acima do conteúdo da Nav se necessário */
+  width: 100%;
+  height: 3px; 
+  overflow: hidden;
+  z-index: 1; 
 
-  /* A pseudo-classe ::after será a linha animada real dentro deste container */
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 200%; /* Continua sendo 200% para a animação */
-    height: 100%; /* Ocupa 100% da altura do AnimatedLineContainer (3px) */
+    width: 200%; 
+    height: 100%;
     background: linear-gradient(to left, rgba(224, 16, 207, 1), rgba(9, 9, 121, 1), rgba(0, 212, 255, 1), rgba(224, 16, 207, 1));
     background-size: 50% 100%;
     animation: ${moverGradiente} 5s linear infinite;
   }
 `;
-
 
 export const Nav = styled.nav`
   align-items: center;
@@ -77,7 +75,6 @@ export const Nav = styled.nav`
   height: 5.5em;
   margin: 0;
   position: relative;
-  /* >>> REMOVEMOS overflow: hidden; daqui! <<< */
   justify-content: space-between;
 
   .rocket {
@@ -101,41 +98,23 @@ export const Nav = styled.nav`
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
     position: absolute;
-    top: 5.5em; /* Começa logo abaixo da Nav */
+    top: 5.5em; 
     left: 0;
     color: rgb(0, 212, 255);
     width: 100%;
     background-color: rgba(1, 51, 120, 0.9);
     padding: 20px 0;
-    z-index: 99; /* Garante que o menu esteja acima de outros conteúdos da página */
+    z-index: 99; 
   }
 
   .btns-mobile ${Buttons} {
     margin: 10px 0;
     padding: 10px 20px;
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 
-  /* A pseudo-classe ::after da Nav não será mais a linha animada,
-     ela foi movida para AnimatedLineContainer. */
-  /* Removemos este bloco:
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200%;
-    height: 3px;
-    background: linear-gradient(to left, rgba(224, 16, 207, 1), rgba(9, 9, 121, 1), rgba(0, 212, 255, 1),rgba(224, 16, 207, 1));
-    background-size: 50% 100%;
-    animation: ${moverGradiente} 5s linear infinite;
-    z-index: 1;
-  }
-  */
-
   @media (min-width: 768px) {
-    /* Não precisa de overflow: hidden; aqui */
     .rocket {
       margin-left: 50px;
     }
